@@ -1,0 +1,6 @@
+<IfModule rewrite_module>
+  Options +FollowSymlinks
+  RewriteEngine On
+  #RewriteCond %{HTTP_REFERER} !index.html
+  RewriteRule (\w+).html location.php?sh=$1
+</IfModule>
